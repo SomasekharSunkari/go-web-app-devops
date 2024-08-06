@@ -61,8 +61,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      # with:
-      #   token: ${{ secrets.TOKEN }}
+      with:
+        token: ${{ secrets.G_TOKEN }}
 
     - name: Update tag in Helm chart
       run: |
